@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My-Pedia 📚
 
-## Getting Started
+Welcome to My-Pedia, a modern, component-driven blog platform built with Next.js and Storybook. This project serves as a personal knowledge base and a showcase of best practices in modern web development.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **Component-Driven UI:** Built with a reusable and testable component library using **Storybook**.
+*   **Modern Tech Stack:** Powered by **Next.js** (App Router), **React**, and **TypeScript**.
+*   **Styled with Tailwind CSS:** A utility-first CSS framework for rapid and consistent styling.
+*   **Content as Code:** Articles are managed in Markdown and processed for easy rendering.
+*   **Clean Architecture:** Clear separation between UI library, backend logic, and frontend pages.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+Follow these instructions to get a local copy up and running for development and testing purposes.
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*   [Node.js](https://nodejs.org/) (v18.0 or later recommended)
+*   [npm](https://www.npmjs.com/) or a compatible package manager
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/kou6k-kkart/my-pedia.git
+    cd my-pedia
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Running the Project
+
+You can run the project in two different modes:
+
+1.  **Run the Storybook UI Library:**
+    This command starts the isolated environment for viewing and testing components.
+    ```bash
+    npm run storybook
+    ```
+    Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
+
+2.  **Run the Next.js Development Server:**
+    This command starts the main application.
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+---
+
+## 🛠️ Tech Stack
+
+*   **Framework:** [Next.js](https://nextjs.org/)
+*   **Language:** [TypeScript](https://www.typescriptlang.org/)
+*   **UI Development:** [Storybook](https://storybook.js.org/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Linting:** [ESLint](https://eslint.org/)
+*   **Testing:** [Vitest](https://vitest.dev/) (Integrated with Storybook)
+
+---
+
+##  Roadmap
+
+This project is being developed in phases. Here's a brief overview:
+
+*   **✅ Phase 1: UI Library:** Build all core components in Storybook.
+*   **⏳ Phase 2: Backend & Data Layer:** Set up API routes and data models for articles.
+*   **◻️ Phase 3: Frontend Integration:** Connect UI components to the backend and build application pages.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/kou6k-kkart/my-pedia/issues).
+
