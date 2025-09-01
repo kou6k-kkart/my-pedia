@@ -1,83 +1,115 @@
-# My-Pedia 📚
+# ⛫ کوشک هنر (KKArt!) - پلتفرم پدیا 
 
-Welcome to My-Pedia, a modern, component-driven blog platform built with Next.js and Storybook. This project serves as a personal knowledge base and a showcase of best practices in modern web development.
+به پروژه کوشک هنر (KKArt!) خوش آمدید. این ریپازیتوری شامل کدهای مربوط به فاز اول پروژه، یعنی "پدیا" است؛ یک پلتفرم مدرن و مبتنی بر کامپوننت که با Next.js و Storybook ساخته شده است.
+
+---
+## چشم‌انداز ما: کوشک هنر چیست؟
+هدف اصلی ما در کوشک هنر، ساختن یک پلتفرم متمرکز، شفاف و بدون تبلیغات برای تمام داوطلبان کنکور هنر ایران است. ما قصد داریم به "ویترین سنجش" تبدیل شویم؛ جایی که داوطلبان بتوانند به دور از اطلاعات پراکنده، به محتوای دقیق و قابل استناد دسترسی داشته باشند. چشم‌انداز ما، توانمندسازی داوطلبان از طریق آگاهی‌بخشی خالص است.
+
+** این پروژه، اولین قدم ما برای تحقق این چشم‌انداز بزرگ است**.
+
+
+---
+## ✨ ویژگی‌های فنی پلتفرم
+
+معماری مبتنی بر کامپوننت: ساخته شده با یک کتابخانه کامپوننت قابل استفاده مجدد و قابل تست با استفاده از Storybook.
+
+### 📡 تکنولوژی‌های مدرن: 
+
+قدرت گرفته از Next.js (App Router)، React و TypeScript.
+
+### 💎 استایل‌دهی با Tailwind CSS:
+
+
+یک فریمورک CSS مدرن برای استایل‌دهی سریع و یکپارچه
+.
+### 💻 محتوا به عنوان کد: 
+
+مقالات در فایل‌های Markdown مدیریت می‌شوند تا به راحتی رندر شوند.
+
+**🏰 معماری تمیز**:
+
+جداسازی واضح بین کتابخانه UI، منطق بک‌اند و صفحات فرانت‌اند.
+---
+
+## 🚀 راهنمای راه‌اندازی و توسعه
+این دستورالعمل‌ها به شما کمک می‌کنند تا یک نسخه محلی از پروژه را برای اهداف توسعه و تست اجرا کنید.
+
+### پیش‌نیازها
+Node.js (نسخه 18.0 یا بالاتر توصیه می‌شود)
+npm یا یک مدیریت‌کننده پکیج سازگار
 
 ---
 
-## ✨ Features
+### نصب و راه‌اندازی
+کلون کردن ریپازیتوری:
 
-*   **Component-Driven UI:** Built with a reusable and testable component library using **Storybook**.
-*   **Modern Tech Stack:** Powered by **Next.js** (App Router), **React**, and **TypeScript**.
-*   **Styled with Tailwind CSS:** A utility-first CSS framework for rapid and consistent styling.
-*   **Content as Code:** Articles are managed in Markdown and processed for easy rendering.
-*   **Clean Architecture:** Clear separation between UI library, backend logic, and frontend pages.
+```bash
+
+git clone https://github.com/kou6k-kkart/my-pedia.git
+cd my-pedia
+```
+
+---
+### نصب وابستگی‌ها:
+
+```bash
+
+npm install
+
+```
+---
+
+اجرای پروژه
+شما می‌توانید پروژه را در دو حالت مختلف اجرا کنید:
+
+### اجرای کتابخانه کامپوننت Storybook:
+
+این دستور محیط ایزوله Storybook را برای مشاهده و تست کامپوننت‌ها اجرا می‌کند.
+---
+
+```bash
+
+npm run storybook
+
+```
+برای مشاهده، آدرس http://localhost:6006 را در مرورگر خود باز کنید.
+
+اجرای سرور توسعه Next.js: 
+این دستور اپلیکیشن اصلی را اجرا می‌کند.
 
 ---
 
-## 🚀 Getting Started
+```bash
 
-Follow these instructions to get a local copy up and running for development and testing purposes.
+npm run dev
 
-### Prerequisites
+```
+برای مشاهده، آدرس http://localhost:3000 را در مرورگر خود باز کنید.
+---
+🛠️ تکنولوژی‌های استفاده شده
+فریمورک:
+Next.js
+زبان: TypeScript
 
-*   [Node.js](https://nodejs.org/) (v18.0 or later recommended)
-*   [npm](https://www.npmjs.com/) or a compatible package manager
+توسعه UI: Storybook
 
-### Installation
+استایل‌دهی: Tailwind CSS
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/kou6k-kkart/my-pedia.git
-    cd my-pedia
-    ```
+لینتینگ: ESLint
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+تست: Vitest (یکپارچه با Storybook)
 
-### Running the Project
-
-You can run the project in two different modes:
-
-1.  **Run the Storybook UI Library:**
-    This command starts the isolated environment for viewing and testing components.
-    ```bash
-    npm run storybook
-    ```
-    Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
-
-2.  **Run the Next.js Development Server:**
-    This command starts the main application.
-    ```bash
-    npm run dev
-    ```
-    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ---
 
-## 🛠️ Tech Stack
-
-*   **Framework:** [Next.js](https://nextjs.org/)
-*   **Language:** [TypeScript](https://www.typescriptlang.org/)
-*   **UI Development:** [Storybook](https://storybook.js.org/)
-*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-*   **Linting:** [ESLint](https://eslint.org/)
-*   **Testing:** [Vitest](https://vitest.dev/) (Integrated with Storybook)
-
+🗺️ نقشه راه (Roadmap)
 ---
 
-##  Roadmap
+توسعه این پروژه در فازهای مختلف انجام می‌شود:
 
-This project is being developed in phases. Here's a brief overview:
-
-*   **✅ Phase 1: UI Library:** Build all core components in Storybook.
-*   **⏳ Phase 2: Backend & Data Layer:** Set up API routes and data models for articles.
-*   **◻️ Phase 3: Frontend Integration:** Connect UI components to the backend and build application pages.
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/kou6k-kkart/my-pedia/issues).
-
+✅ فاز ۱: کتابخانه UI: ساخت تمام کامپوننت‌های اصلی در Storybook.
+⏳ فاز ۲: لایه بک‌اند و داده: راه‌اندازی APIها و مدل‌های داده برای مقالات.
+◻️ فاز ۳: یکپارچه‌سازی فرانت‌اند: اتصال کامپوننت‌های UI به بک‌اند و ساخت صفحات اپلیکیشن.
+🤝 مشارکت در پروژه
+از مشارکت، گزارش مشکلات و پیشنهاد ویژگی‌های جدید استقبال می‌کنیم! برای شروع، می‌توانید صفحه Issues را بررسی کنید.
