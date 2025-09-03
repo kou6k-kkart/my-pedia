@@ -1,6 +1,7 @@
 // src/components/Card.tsx
 
 import React from 'react';
+import Image from 'next/image';
 import { Typography } from './Typography';
 import { Button } from './Button';
 
@@ -19,7 +20,15 @@ export const Card = ({
 }: CardProps) => {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg border border-gray-200">
-      <img className="w-full h-48 object-cover" src={imageUrl} alt={title} />
+      <Image
+        className="w-full h-48 object-cover"
+        src={imageUrl}
+        alt={title}
+        width={640}
+        height={256}
+        sizes="(max-width: 640px) 100vw, 640px"
+        loading="lazy"
+      />
       <div className="px-6 py-4">
         <Typography variant="h4" className="mb-2">
           {title}
