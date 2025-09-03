@@ -2,7 +2,9 @@
 
 import React from 'react';
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+type NativeInputProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'>;
+
+interface InputProps extends NativeInputProps {
   size?: 'small' | 'medium' | 'large';
   error?: boolean;
   label?: string;
